@@ -50,8 +50,8 @@ def classify_scores(file_list, output_csv):
     df.to_csv(output_csv, index=False)
 
 # Parameters
-file_list = "exp/result/sep_only_removed_results_cl2_v1_4.txt"  # 노이즈가 제거된 ID 및 predict score file
-output_csv = "submission_csv/pre_cl2_v1_4_sep_removed_tanh4x.csv" # 최종 제출 결과물
+file_list = "noise_removed_results_cl2_v1_4.txt"  # 노이즈가 제거된 ID 및 predict score file
+output_csv = "submission_csv/pre_cl2_v1_4_noise_removed_tanh4x.csv" # 최종 제출 결과물
 
 # Run the classification
 classify_scores(file_list, output_csv)

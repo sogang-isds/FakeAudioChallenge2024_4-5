@@ -28,8 +28,8 @@ def remove_matching_lines(file1_path, file2_path, output_file_path):
             output_file.write(line)
 
 # 사용 예제
-file1_path = 'exp/result/noise_list_sep_1.txt'  # 노이즈 텍스트 파일 경로
-file2_path = 'exp/result/results_cl2_v1_4.txt'  # ID와 predict score가 합쳐진 결과 텍스트 파일 경로
-output_file_path = 'exp/result/sep_only_removed_results_cl2_v1_4.txt'  # 노이즈가 제거된 결과를 저장할 파일 경로
+file1_path = 'noise_list_sep_1.txt'  # 노이즈 텍스트 파일 경로
+file2_path = 'results_cl2_v1_4.txt'  # ID와 predict score가 합쳐진 결과 텍스트 파일 경로
+output_file_path = 'noise_removed_results_cl2_v1_4.txt'  # 노이즈가 제거된 결과를 저장할 파일 경로
 
 remove_matching_lines(file1_path, file2_path, output_file_path)

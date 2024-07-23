@@ -23,7 +23,7 @@ def merge_files(id_file, score_file, output_file):
         print(f"An error occurred: {e}")
 
 # 사용 예시
-id_file = 'exp/result/ids.txt'  # ID가 있는 파일 경로
-score_file = 'exp/result/predict_scores.txt'  # 스코어가 있는 파일 경로
-output_file = 'exp/result/results_cl2_v1_4.txt'  # 합쳐진 결과를 저장할 파일 경로
+id_file = 'ids.txt'  # ID가 있는 파일 경로
+score_file = 'predict_scores.txt'  # 스코어가 있는 파일 경로
+output_file = 'results_cl2_v1_4.txt'  # 합쳐진 결과를 저장할 파일 경로
 merge_files(id_file, score_file, output_file)

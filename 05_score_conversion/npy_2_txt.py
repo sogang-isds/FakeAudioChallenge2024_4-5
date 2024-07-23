@@ -10,6 +10,6 @@ def npy_to_txt(npy_file, txt_file):
     print(f"{npy_file} 파일이 {txt_file}로 변환되었습니다.")
 
 # 사용 예시
-npy_file = 'exp/result/predict_scores.npy' #trainSASVnet.py에서 저장한 npy파일
-txt_file = 'exp/result/predict_scores.txt' #npy를 txt로 변환
+npy_file = 'predict_scores.npy' #trainSASVnet.py에서 저장한 npy파일
+txt_file = 'predict_scores.txt' #npy를 txt로 변환
 npy_to_txt(npy_file, txt_file)
