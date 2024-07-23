@@ -6,6 +6,9 @@
 ### 코드
     - https://github.com/sasv-challenge/SASV2_Baseline
 
+### 최종 제출 모델
+    - https://drive.google.com/file/d/1yIyt7Gnm6ViTuwE7rn0DHNhd8wRE0WqW/view?usp=sharing 
+
 # 04_training_and_evaluation
 ## 환경 설정 방법
 
@@ -62,7 +65,7 @@ CUDA_VISIBLE_DEVICES=0 python trainSASVNet.py \
 ### 주어진 sh 파일 이용
 ~~~bash
 # clean한 train data로 2 epoch training
-bash train_stage1.sh
+bash train_stage2.sh
 ~~~
 
 ### 본인 경로로 인자 입력
@@ -99,7 +102,7 @@ CUDA_VISIBLE_DEVICES=0 python trainSASVNet.py \
 ### 주어진 sh 파일 이용
 ~~~bash
 # noise mixed train data로 4 epoch training
-bash train_stage2.sh
+bash train_stage3.sh
 ~~~
 
 ### 본인 경로로 인자 입력
