@@ -9,12 +9,16 @@ conda activate sasv
 # 라이브러리 설치
 pip3 install -r requirements.txt
 ~~~
-### pre-trained weight는 save/sasv_baseline_stage3/model/model000000001.model로 저장
+~~~bash
+# pre-trained weight는 save/sasv_baseline_stage3/model/model000000001.model로 저장
+~~~
 ## 평가 실행
-### 프로토콜의 각 행은 ’SPEAKER 파일명(확장자명 제외) - - -‘
-### e.g. 'SPEAKER TEST_00000_3 - - -'
-### 평가 실행시 SASVNet.py의 line 101의 protocol이 올바른지 확인해야함
-#### 해당 프로토콜은 eval_path 경로에 'SPEAKER' + train data set 중 real에 해당하는 파일명(확장자 제외)과 연결되어 있어야 함
+~~~bash
+# 프로토콜의 각 행은 ’SPEAKER 파일명(확장자명 제외) - - -‘
+# e.g. 'SPEAKER TEST_00000_3 - - -'
+# 평가 실행시 SASVNet.py의 line 101의 protocol이 올바른지 확인해야함
+# 해당 프로토콜은 eval_path 경로에 'SPEAKER' + train data set 중 real에 해당하는 파일명(확장자 제외)과 연결되어 있어야 함
+~~~
 ### 주어진 sh파일 이용
 ~~~bash
 bash run.sh
@@ -37,11 +41,13 @@ CUDA_VISIBLE_DEVICES=0 python trainSASVNet.py \
 ~~~
 
 ## 훈련 실행
-### 훈련 실행 전 각 train data를 랜덤하게 8:2 비율로 나누어 train data와 dev(validation) data로 분리한 뒤 각각의 프로토콜 작성
-### 프로토콜의 각 행은 'SPEAKER 파일명(확장자명 제외) - - bonafide' or 'SPEAKER 파일명(확장자명 제외) - A01 spoof'로 이루어져야 함
-### e.g. 'SPEAKER AAAQOZYI_v1 - A01 spoof'
-### 훈련 실행시 SASVNet.py의 line 101의 protocol이 올바른지 확인해야함
-#### 해당 프로토콜은 eval_path 경로에 'SPEAKER' + train data set 중 real에 해당하는 파일명(확장자 제외)과 연결되어 있어야 함
+~~~bash
+# 훈련 실행 전 각 train data를 랜덤하게 8:2 비율로 나누어 train data와 dev(validation) data로 분리한 뒤 각각의 프로토콜 작성
+# 프로토콜의 각 행은 'SPEAKER 파일명(확장자명 제외) - - bonafide' or 'SPEAKER 파일명(확장자명 제외) - A01 spoof'로 이루어져야 함
+# e.g. 'SPEAKER AAAQOZYI_v1 - A01 spoof'
+# 훈련 실행시 SASVNet.py의 line 101의 protocol이 올바른지 확인해야함
+# 해당 프로토콜은 eval_path 경로에 'SPEAKER' + train data set 중 real에 해당하는 파일명(확장자 제외)과 연결되어 있어야 함
+~~~
 ## stage 1
 ### 주어진 sh 파일 이용
 ~~~bash
