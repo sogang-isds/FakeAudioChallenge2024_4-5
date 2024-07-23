@@ -61,7 +61,7 @@ CUDA_VISIBLE_DEVICES=0 python trainSASVNet.py \
 # e.g. sh 파일로 실행할 경우 'protocols/DA_meta_dev.txt'
 # 해당 프로토콜은 eval_path 경로에 'SPEAKER' + train data set 중 real에 해당하는 파일명(확장자 제외)과 연결되어 있어야 함
 ~~~
-## stage 1
+## stage 2
 ### 주어진 sh 파일 이용
 ~~~bash
 # clean한 train data로 2 epoch training
@@ -98,7 +98,7 @@ CUDA_VISIBLE_DEVICES=0 python trainSASVNet.py \
         --eval_path /path/to/your/devldata \
         --model SKA_TDNN
 ~~~
-## stage 2
+## stage 3
 ### 주어진 sh 파일 이용
 ~~~bash
 # noise mixed train data로 4 epoch training
