@@ -98,7 +98,7 @@ class ModelTrainer(object):
 
         ## Enroll (speaker model) loader ##
         spk_meta = {}
-        meta = np.loadtxt('protocols/DA_meta.txt', str)
+        meta = np.loadtxt('protocols/DA_meta_dev.txt', str)
         spk = meta[0]
         spk_meta[spk] = meta[1].split(',')
         

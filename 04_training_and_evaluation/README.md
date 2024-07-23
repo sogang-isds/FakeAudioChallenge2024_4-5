@@ -17,6 +17,7 @@ pip3 install -r requirements.txt
 # 프로토콜의 각 행은 ’SPEAKER 파일명(확장자명 제외) - - -‘
 # e.g. 'SPEAKER TEST_00000_3 - - -'
 # 평가 실행시 SASVNet.py의 line 101의 protocol이 올바른지 확인해야함
+# e.g. sh 파일로 실행할 경우 'protocols/DA_meta.txt'
 # 해당 프로토콜은 eval_path 경로에 'SPEAKER' + train data set 중 real에 해당하는 파일명(확장자 제외)과 연결되어 있어야 함
 ~~~
 ### 주어진 sh파일 이용
@@ -46,6 +47,7 @@ CUDA_VISIBLE_DEVICES=0 python trainSASVNet.py \
 # 프로토콜의 각 행은 'SPEAKER 파일명(확장자명 제외) - - bonafide' or 'SPEAKER 파일명(확장자명 제외) - A01 spoof'로 이루어져야 함
 # e.g. 'SPEAKER AAAQOZYI_v1 - A01 spoof'
 # 훈련 실행시 SASVNet.py의 line 101의 protocol이 올바른지 확인해야함
+# e.g. sh 파일로 실행할 경우 'protocols/DA_meta_dev.txt'
 # 해당 프로토콜은 eval_path 경로에 'SPEAKER' + train data set 중 real에 해당하는 파일명(확장자 제외)과 연결되어 있어야 함
 ~~~
 ## stage 1

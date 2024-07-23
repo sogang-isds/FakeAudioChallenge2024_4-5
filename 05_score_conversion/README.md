@@ -1,8 +1,9 @@
 # 05_score_conversion
 ## 환경설정
-### pandas가 라이브러리에 포함되어있지 않을 경우
+### pandas/matplotlib가 라이브러리에 포함되어있지 않을 경우
 ~~~bash
 pip install pandas
+pip install matplotlib
 ~~~
 ### 평가 결과 가져오기
 ~~~bash
